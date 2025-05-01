@@ -30,7 +30,8 @@ li {
 }
 
 li, p {
-    color:  var(--Brown800);
+    /* color:  var(--Brown800); */
+    color: green;
     font-family: var(--outfit);
     font-weight: 400;
 }
