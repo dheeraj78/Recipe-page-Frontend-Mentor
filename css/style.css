@@ -30,8 +30,7 @@ li {
 }
 
 li, p {
-    /* color:  var(--Brown800); */
-    color: green;
+    color:  var(--Brown800);
     font-family: var(--outfit);
     font-weight: 400;
 }
@@ -154,4 +153,3 @@ tr:last-child > td {
         padding: 0 1.5rem;
     }
 }
-
