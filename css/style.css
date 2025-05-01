@@ -25,11 +25,32 @@ a {
 }
 
 li {
-    /* list-style-type: none; */
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+li, p {
+    color:  var(--Brown800);
+    font-family: var(--outfit);
+    font-weight: 400;
 }
 
 body {
     overflow-x: hidden;
+}
+
+h1,h2,h3 {
+    font-family: var(--youngserif);
+    margin: 1.2rem 0;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul,ol {
+    padding-left: 1.5rem;
 }
 
 .wrapper {
@@ -45,8 +66,8 @@ body {
     padding: 1.5rem;
     background-color: var(--White);
     border-radius: 12px;
-    width: 60%;
-    max-width: 930px;
+    width: 55%;
+    max-width: 920px;
 }
 
 .main-card img {
@@ -55,38 +76,81 @@ body {
     border-radius: 12px;
 }
 
-h1,h2,h3 {
-    font-family: var(--youngserif);
-    margin: 1.2rem 0;
-}
-
 #preparation-time,.ingredients,.Instructions,.nutrition {
     margin: 1.5rem 0;
+    
 }
 
 #main-title {
-    font-weight: 700;
     font-size: 1.8rem;
-}
-
-p {
-    font-size: 1rem;
-    font-family: var(--outfit);
-    font-weight: 400;
-    color: var(--Brown800)
 }
 
 #preparation-time {
     background-color: var(--Rose50);
     backdrop-filter: blur(5px);
-    padding: calc(1.5rem - 1.2rem) 1.5rem;
+    padding: calc(1.5rem - 1.2rem) 1.5rem 1.5rem;
     border-radius: 12px;
+    font-family: var(--outfit);
 }
 
-#preparation-time ul {
-    padding-left: 1.5rem;
+#preparation-time h3 {
+    font-family: inherit;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
 }
 
-#preparation-time li {
-    line-height: 1.875rem;
+.outfit600 {
+    font-family: inherit;
+    font-weight: 600;
 }
+
+h2 {
+    font-size: 1.87rem;
+    color: var(--Brown800)
+}
+
+.Instructions {
+    border-top: 1.5px solid var(--Stone150);
+    border-bottom: 1.5px solid var(--Stone150);
+    margin: auto;
+    padding-bottom: 2rem; 
+}
+
+table {
+    margin: 1.5rem 1rem 1.5rem 0;
+    width: 100%;
+    font-family: var(--outfit);
+}
+
+td {
+    padding: 1rem 1rem;
+    border-bottom: 1.5px solid var(--Stone150);
+}
+
+tr:last-child > td {
+    border: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .main-card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .main-card {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-card img {
+        border-radius: 0px;
+    }
+
+    .padding {
+        padding: 0 1.5rem;
+    }
+}
+
